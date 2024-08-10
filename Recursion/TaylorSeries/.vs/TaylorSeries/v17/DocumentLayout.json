@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\C\u002B\u002B\\Learning_DSA\\Recursion\\TaylorSeries\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB0F799-9B92-45E9-B7FE-54300783DFBC}|TaylorSeries\\TaylorSeries.vcxproj|C:\\C\u002B\u002B\\Learning_DSA\\Recursion\\TaylorSeries\\TaylorSeries\\TaylorSeries.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AB0F799-9B92-45E9-B7FE-54300783DFBC}|TaylorSeries\\TaylorSeries.vcxproj|solutionrelative:TaylorSeries\\TaylorSeries.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaylorSeries.cpp",
+              "DocumentMoniker": "C:\\C\u002B\u002B\\Learning_DSA\\Recursion\\TaylorSeries\\TaylorSeries\\TaylorSeries.cpp",
+              "RelativeDocumentMoniker": "TaylorSeries\\TaylorSeries.cpp",
+              "ToolTip": "C:\\C\u002B\u002B\\Learning_DSA\\Recursion\\TaylorSeries\\TaylorSeries\\TaylorSeries.cpp",
+              "RelativeToolTip": "TaylorSeries\\TaylorSeries.cpp",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAIwFEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-07T19:04:12.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

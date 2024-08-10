@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\C\u002B\u002B\\Learning_DSA\\Recursion\\Sum_of_first_n_natural_numbers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AF938C8-3322-4A90-A84F-7F326C9879E3}|Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers.vcxproj|C:\\C\u002B\u002B\\Learning_DSA\\Recursion\\Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AF938C8-3322-4A90-A84F-7F326C9879E3}|Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers.vcxproj|solutionrelative:Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sum_of_first_n_natural_numbers.cpp",
+              "DocumentMoniker": "C:\\C\u002B\u002B\\Learning_DSA\\Recursion\\Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers.cpp",
+              "RelativeDocumentMoniker": "Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers.cpp",
+              "ToolTip": "C:\\C\u002B\u002B\\Learning_DSA\\Recursion\\Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers.cpp",
+              "RelativeToolTip": "Sum_of_first_n_natural_numbers\\Sum_of_first_n_natural_numbers.cpp",
+              "ViewState": "AQIAABkAAAAAAAAAAAAIwBoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-06T21:22:44.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

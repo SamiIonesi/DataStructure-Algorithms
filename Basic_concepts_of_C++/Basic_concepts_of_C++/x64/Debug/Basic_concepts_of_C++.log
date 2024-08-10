@@ -1,0 +1,5 @@
+﻿  Basic_concepts_of_C++.cpp
+C:\C++\Learning_DSA\Basic_concepts_of_C++\Basic_concepts_of_C++\Basic_concepts_of_C++.cpp(65,6): warning C4101: 'length': unreferenced local variable
+C:\C++\Learning_DSA\Basic_concepts_of_C++\Basic_concepts_of_C++\Basic_concepts_of_C++.cpp(66,6): warning C4101: 'breath': unreferenced local variable
+C:\C++\Learning_DSA\Basic_concepts_of_C++\Basic_concepts_of_C++\Basic_concepts_of_C++.cpp(67,6): warning C4101: 'area': unreferenced local variable
+  Basic_concepts_of_C++.vcxproj -> C:\C++\Learning_DSA\Basic_concepts_of_C++\x64\Debug\Basic_concepts_of_C++.exe
