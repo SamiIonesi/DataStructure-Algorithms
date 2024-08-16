@@ -23,17 +23,17 @@ There are two different types of data structures:
 
 Def. : It refers to how data is actually stored in the computer's physical memory. This includes details about memory allocation, how data is organized in memory, the hardware architecture used, and specific performance optimizations.
   
-  - Arrays
-  - Linked Lists
+    - Arrays
+    - Linked Lists
   
 2. Logical data structures
 
 Def. : It represents the abstract way in which data is organized and manipulated in programs, ignoring the details of physical storage. This includes the relationships and operations possible on data structures, such as accessing, inserting, deleting, and searching.
 
-  - Stacks
-  - Queues
-  - Trees
-  - Graphs
-  - Hash Tables
+    - Stacks
+    - Queues
+    - Trees
+    - Graphs
+    - Hash Tables
 
 Next, I will present each data structure separately and what are their functions and benefits.
