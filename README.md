@@ -40,3 +40,7 @@ Def. : It represents the abstract way in which data is organized and manipulated
 One of the important things is that logical data structures actually use the physical data structure to build them.
 
 Next, I will present each data structure separately and what are their functions and benefits.
+
+## Arrays
+
+Array is a data structure that is provided almost by every programming language.
