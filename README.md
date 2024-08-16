@@ -43,4 +43,25 @@ Next, I will present each data structure separately and what are their functions
 
 ## Arrays
 
-Array is a data structure that is provided almost by every programming language.
+An array is a data structure that is provided almost by every programming language.
+Arrays can be represented in two different form in C++:
+- using stack frame of memory
+```cpp
+  #include <iostream>
+  using namespace std;
+  int main()
+  {
+      int array[] = {1, 2, 3, 4, 5}; //this line of code will create an array in stack with five elements 
+      return 0;
+  }
+```
+- using heap frame of memory
+```cpp
+  #include <iostream>
+  using namespace std;
+  int main()
+  {
+      int* array = new int[5]; //this line of code will create an array in heap with five elements 
+      return 0;
+  }
+```
