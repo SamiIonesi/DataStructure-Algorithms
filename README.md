@@ -19,6 +19,7 @@ An algorithm is a step-by-step guide that leads you to solve a certain problem a
 To solve a certain problem, there are various types of data structures from which you can choose, but you need to know each of them, what are their benefits, how they work and so on, and in this way you can choose the data structure that fits best and is the most effective for solving your problem.
 
 There are two different types of data structures:
+
 **1. Physical data structures**
 
 Def. : It refers to how data is actually stored in the computer's physical memory. This includes details about memory allocation, how data is organized in memory, the hardware architecture used, and specific performance optimizations.
