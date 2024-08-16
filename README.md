@@ -46,7 +46,7 @@ Next, I will present each data structure separately and what are their functions
 An array is a data structure that is provided almost by every programming language.
 
 Arrays can be represented in two different form in C++:
-- using stack frame of memory
+- **Static Arrays**: Arrays with a fixed size, determined at compile time.
 ```cpp
   #include <iostream>
   using namespace std;
@@ -56,7 +56,7 @@ Arrays can be represented in two different form in C++:
       return 0;
   }
 ```
-- using heap frame of memory
+- **Dynamic Arrays**: Arrays whose size can be determined at runtime, typically managed using pointers and dynamic memory allocation.
 ```cpp
   #include <iostream>
   using namespace std;
@@ -66,3 +66,15 @@ Arrays can be represented in two different form in C++:
       return 0;
   }
 ```
+
+If we look at an array as an Abstract Data Type, then we have to mention that the representation of an array has the following requirements:
+
+1. **Contiguity of Memory**: The elements must be stored in contiguous memory locations.
+2. **Fixed Size**: The size of the array must be determined when the array is created.
+3. **Direct Access**: Each element can be accessed directly via its index in constant time.
+4. **Homogeneity**: All elements in the array must be of the same data type.
+5. **Size** is the dimension of an array and **length** is the number of elements present in that array.
+
+And also, an array can perform a number of operations, of which I will mention a few:
+1. **Insert** 
+
