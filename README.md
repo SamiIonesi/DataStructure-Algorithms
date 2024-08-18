@@ -75,6 +75,69 @@ If we look at an array as an Abstract Data Type, then we have to mention that th
 4. **Homogeneity**: All elements in the array must be of the same data type.
 5. **Size** is the dimension of an array and **length** is the number of elements present in that array.
 
-And also, an array can perform a number of operations, of which I will mention a few:
-1. **Insert** 
+And also, an array can perform a number of operations, of which I will mention a few. This operations are member functions of the next class:
+
+```cpp
+class Array
+{
+private:
+    int *arr;
+    int size;
+    int length;
+
+public:
+    Array(int size)
+    {
+        this->size = size;
+        arr = new int[size];
+        length = 0;
+    }
+
+    ~Array()
+    {
+        delete []arr;
+    }
+
+    int* getArr() { return arr; }
+    void setSize(int size) { this->size = size; }
+    int getSize() { return size;}
+    int getLength() { return length; }
+}
+```
+
+1. **Insert**
+
+  This function will add an element at the end of the array.
+  
+  ```cpp
+  void append(int value)
+  {
+      if(length < size)
+      {
+          arr[length] = value;
+          length++;
+      }
+  }
+```
+  
+2. **Append**
+
+  This function will add an element at a specific index, with a specific value into the array.
+  
+```cpp
+  bool insert_method2(int index, int value)
+    {
+        if(index >= 0 || index <= length)
+        {
+            for(int i = length; i > index; i--)
+                arr[i] = arr[i - 1];
+            arr[index] = value;
+            return true;
+        }
+
+        return false;
+    }
+```
+
+3. 
 
