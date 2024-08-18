@@ -105,33 +105,56 @@ public:
 }
 ```
 
-1. **Append**
+1. **Display**
 
-  This function will add an element at the end of the array.
+    This function will display all the elements of the array.
+    It has a time complexity of **O(n)**.
   
 ```cpp
-  void append(int value)
-  {
-      if(length < size)
-      {
-          arr[length] = value;
-          length++;
-      }
-  }
+void display()
+{
+    cout << "The elements of the array is: " << endl;
+
+    for(int i = 0; i < length; i++)
+    {
+        cout << "arr[" << i << "] = " << arr[i] << endl;
+    }
+}
+```
+
+2. **Append**
+
+    This function will add an element at the end of the array.
+    It has a time complexity of **O(1)**.
+  
+```cpp
+void append(int value)
+{
+    if(length < size)
+    {
+        arr[length] = value;
+        length++;
+    }
+}
 ```
   
-2. **Insert**
+3. **Insert**
 
-  This function will add an element at a specific index, with a specific value into the array.
+    This function will add an element at a specific index, with a specific value into the array.
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
   
 ```cpp
 bool insert(int index, int value)
 {
-    if(index >= 0 || index <= length)
+    if(index >= 0 && index <= length)
     {
         for(int i = length; i > index; i--)
             arr[i] = arr[i - 1];
         arr[index] = value;
+        length++;
         return true;
     }
 
@@ -139,5 +162,93 @@ bool insert(int index, int value)
 }
 ```
 
-3. 
+4. **Delete**
 
+    This function will delete an element from a specific index of the array.
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+int deleteElement(int index)
+{
+    if(index >= 0 && index < length)
+    {
+        int temp = arr[index];
+        
+        for(int i = index; i < length; i++)
+        {
+            arr[i] = arr[i + 1];
+        }
+
+        length--;
+        return temp;
+    }
+
+    return INT_MIN;
+}
+```
+
+There are two methods for searching in an array:
+
+1. **Linear search**
+
+    In this method, we will search for the key (element) in the array in linear mode. 
+    
+    Workflow: we will check each element in the array for the key; if it's found, then we say that the search was successful; otherwise, the search is unsuccessful.
+
+    Condition: the elements in an array must be unique, there must not be any duplicate elements in the array.
+
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+int liniarSearch(int key)
+{
+    for(int i = 0; i < length; i++)
+    {
+        if(arr[i] == key)
+            return i;
+    }
+    return INT_MIN;
+}
+```
+
+1. **Linear search**
+
+    In this method, we will search for the key (element) in the array in binary mode. 
+    
+    Workflow: the array will be halved and it will be checked in which half the key fits. This operation is done until finally the key is found at the corresponding index.
+    
+    Conndition: the array should be sorted.
+
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(〖log〗_n)** for average case
+    - **O(〖log〗_n)** for worst case
+  
+```cpp
+int binarySearch(int key)
+{
+    int start = 0;
+    int end = length - 1;
+    int half;
+
+    while(start <= end)
+    {
+        half = (start + end) / 2;
+
+        if(key == arr[half])
+            return half;
+        else if(key < arr[half])
+            end = half - 1;
+        else if(key > arr[half])
+            start = half + 1;
+    }
+
+    return -1;
+}
+```
