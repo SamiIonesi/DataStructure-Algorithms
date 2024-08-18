@@ -109,7 +109,7 @@ public:
 
   This function will add an element at the end of the array.
   
-  ```cpp
+```cpp
   void append(int value)
   {
       if(length < size)
@@ -125,18 +125,18 @@ public:
   This function will add an element at a specific index, with a specific value into the array.
   
 ```cpp
-  bool insert(int index, int value)
+bool insert(int index, int value)
+{
+    if(index >= 0 || index <= length)
     {
-        if(index >= 0 || index <= length)
-        {
-            for(int i = length; i > index; i--)
-                arr[i] = arr[i - 1];
-            arr[index] = value;
-            return true;
-        }
-
-        return false;
+        for(int i = length; i > index; i--)
+            arr[i] = arr[i - 1];
+        arr[index] = value;
+        return true;
     }
+
+    return false;
+}
 ```
 
 3. 
