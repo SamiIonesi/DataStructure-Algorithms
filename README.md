@@ -105,7 +105,7 @@ public:
 }
 ```
 
-1. **Insert**
+1. **Append**
 
   This function will add an element at the end of the array.
   
@@ -120,12 +120,12 @@ public:
   }
 ```
   
-2. **Append**
+2. **Insert**
 
   This function will add an element at a specific index, with a specific value into the array.
   
 ```cpp
-  bool insert_method2(int index, int value)
+  bool insert(int index, int value)
     {
         if(index >= 0 || index <= length)
         {
