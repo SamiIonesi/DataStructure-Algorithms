@@ -108,6 +108,7 @@ public:
 1. **Display**
 
     This function will display all the elements of the array.
+
     It has a time complexity of **O(n)**.
   
 ```cpp
@@ -125,6 +126,7 @@ void display()
 2. **Append**
 
     This function will add an element at the end of the array.
+
     It has a time complexity of **O(1)**.
   
 ```cpp
@@ -141,6 +143,7 @@ void append(int value)
 3. **Insert**
 
     This function will add an element at a specific index, with a specific value into the array.
+
     It has a time complexity of:
     - **Ω(1)** for best case
     - **θ(n)** for average case
@@ -165,6 +168,7 @@ bool insert(int index, int value)
 4. **Delete**
 
     This function will delete an element from a specific index of the array.
+
     It has a time complexity of:
     - **Ω(1)** for best case
     - **θ(n)** for average case
@@ -187,6 +191,268 @@ int deleteElement(int index)
     }
 
     return INT_MIN;
+}
+```
+
+5. **Get**
+
+    This function will return the element present in array from a specific index.
+
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(1)** for average case
+    - **O(1)** for worst case
+  
+```cpp
+int get(int index)
+{
+    if(index >= 0 && index < length)
+    {
+        return arr[index];
+    }
+
+    return INT_MIN;
+}
+```
+
+6. **Set**
+
+    This function will set a specific value to an element from the array given by a specific index.
+
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(1)** for average case
+    - **O(1)** for worst case
+  
+```cpp
+bool set(int index, int value)
+{
+    if(index >= 0 && index < length)
+    {
+        arr[index] = value;
+        return true;
+    }
+    return false;
+}
+```
+
+7. **Max**
+
+    This function will return the maximum element value from the array.
+
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+int max()
+{
+    if(length >= 0 && length < size)
+    {
+        int maxElement = arr[0];
+
+        for(int i = 1; i < length; i++)
+        {
+            if(maxElement < arr[i])
+                maxElement = arr[i];
+        }
+        return maxElement;
+    }
+    return INT_MIN;
+}
+```
+
+8. **Min**
+
+    This function will return the minimum element value from the array.
+
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+int min()
+{
+    if(length >= 0 && length < size)
+    {
+        int minElement = arr[0];
+
+        for(int i = 1; i < length; i++)
+        {
+            if(minElement > arr[i])
+                minElement = arr[i];
+        }
+        return minElement;
+    }
+    return INT_MIN;
+}
+```
+
+9. **Sum**
+
+    This function will return the sum of all elements from the array.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+int sum()
+{
+    if(length >= 0 && length < size)
+    {
+        int sum = 0;
+
+        for(int i = 0; i < length; i++)
+            sum += arr[i];
+
+        return sum;
+    }
+    return INT_MIN;
+}
+```
+
+10. **Average**
+
+    This function will return the average of all elements from the array.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+float avg()
+{
+    if(length >= 0 && length < size)
+    {
+        int sum = 0;
+
+        for(int i = 0; i < length; i++)
+            sum += arr[i];
+
+        return (float)sum / length;
+    }
+    return INT_MIN;
+}
+```
+
+11. **Reverse**
+
+    This function will reverse the array.
+
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+void reverse()
+{
+    if(length >= 0 && length < size)
+    {
+        for(int i = 0; i < length / 2; i++)
+        {
+            int temp = arr[i];
+            arr[i] = arr[length - i - 1];
+            arr[length - i - 1] = temp;
+        }
+    }
+}
+```
+
+12. **Left Shift**
+
+    This function will shift to left all the elements from the array by one.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+void leftShift()
+{
+    if(length >= 0 && length < size)
+    {
+        for(int i = 1; i < length; i++)
+            arr[i - 1] = arr[i];
+        
+        arr[length - 1] = 0;
+    }
+}
+```
+
+13. **Left Rotate**
+
+    This function will rotate to left all the elements from the array.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+void leftRotate()
+{
+    if(length >= 0 && length < size)
+    {
+        int temp = arr[0];
+
+        for(int i = 1; i < length; i++)
+            arr[i - 1] = arr[i];
+        
+        arr[length - 1] = temp;
+    }
+}
+```
+
+14. **Right Shift**
+
+    This function will shift to right all the elements from the array by one.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+ void rightShift()
+{
+    if(length >= 0 && length < size)
+    {
+        for(int i = length - 2; i >= 0; i--)
+            arr[i + 1] = arr[i];
+        
+        arr[0] = 0;
+    }
+}
+```
+
+15. **Right Rotate**
+
+    This function will rotate to right all the elements from the array.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+void rightRotate()
+{
+    if(length >= 0 && length < size)
+    {
+        int temp = arr[length - 1];
+
+        for(int i = length - 2; i >= 0; i--)
+            arr[i + 1] = arr[i];
+        
+        arr[0] = temp;
+    }
 }
 ```
 
@@ -217,7 +483,7 @@ int liniarSearch(int key)
 }
 ```
 
-1. **Linear search**
+2. **Binary search**
 
     In this method, we will search for the key (element) in the array in binary mode. 
     
@@ -227,8 +493,8 @@ int liniarSearch(int key)
 
     It has a time complexity of:
     - **Ω(1)** for best case
-    - **θ(〖log〗_n)** for average case
-    - **O(〖log〗_n)** for worst case
+    - **θ(log n)** for average case
+    - **O( log n)** for worst case
   
 ```cpp
 int binarySearch(int key)

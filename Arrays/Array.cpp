@@ -134,27 +134,166 @@ public:
         return -1;
     }
 
+    int get(int index)
+    {
+        if(index >= 0 && index < length)
+        {
+            return arr[index];
+        }
+
+        return INT_MIN;
+    }
+
+    bool set(int index, int value)
+    {
+        if(index >= 0 && index < length)
+        {
+            arr[index] = value;
+            return true;
+        }
+        return false;
+    }
+
+    int max()
+    {
+        if(length >= 0 && length < size)
+        {
+            int maxElement = arr[0];
+
+            for(int i = 1; i < length; i++)
+            {
+                if(maxElement < arr[i])
+                    maxElement = arr[i];
+            }
+            return maxElement;
+        }
+        return INT_MIN;
+    }
+
+    int min()
+    {
+        if(length >= 0 && length < size)
+        {
+            int minElement = arr[0];
+
+            for(int i = 1; i < length; i++)
+            {
+                if(minElement > arr[i])
+                    minElement = arr[i];
+            }
+            return minElement;
+        }
+        return INT_MIN;
+    }
+
+    int sum()
+    {
+        if(length >= 0 && length < size)
+        {
+            int sum = 0;
+
+            for(int i = 0; i < length; i++)
+                sum += arr[i];
+
+            return sum;
+        }
+        return INT_MIN;
+    }
+
+    float avg()
+    {
+        if(length >= 0 && length < size)
+        {
+            int sum = 0;
+
+            for(int i = 0; i < length; i++)
+                sum += arr[i];
+
+            return (float)sum / length;
+        }
+        return INT_MIN;
+    }
+
+    void reverse()
+    {
+        if(length >= 0 && length < size)
+        {
+            for(int i = 0; i < length / 2; i++)
+            {
+                int temp = arr[i];
+                arr[i] = arr[length - i - 1];
+                arr[length - i - 1] = temp;
+            }
+        }
+    }
+
+    void leftShift()
+    {
+        if(length >= 0 && length < size)
+        {
+            for(int i = 1; i < length; i++)
+                arr[i - 1] = arr[i];
+            
+            arr[length - 1] = 0;
+        }
+    }
+
+    void leftRotate()
+    {
+        if(length >= 0 && length < size)
+        {
+            int temp = arr[0];
+
+            for(int i = 1; i < length; i++)
+                arr[i - 1] = arr[i];
+            
+            arr[length - 1] = temp;
+        }
+    }
+
+    void rightShift()
+    {
+        if(length >= 0 && length < size)
+        {
+            for(int i = length - 2; i >= 0; i--)
+                arr[i + 1] = arr[i];
+            
+            arr[0] = 0;
+        }
+    }
+
+    void rightRotate()
+    {
+        if(length >= 0 && length < size)
+        {
+            int temp = arr[length - 1];
+
+            for(int i = length - 2; i >= 0; i--)
+                arr[i + 1] = arr[i];
+            
+            arr[0] = temp;
+        }
+    }
+
 };
 
 int main()
 {
 
-    Array* myArray = new Array(10);
+    Array* myArray = new Array(15);
 
-    myArray->append(7);
+    myArray->append(6);
     myArray->append(10);
     myArray->append(12);
     myArray->append(14);
-    myArray->append(18);
-    myArray->append(20);
-    myArray->append(21);
-    myArray->append(23);
-    myArray->append(27);
-    myArray->append(30);
+    myArray->append(5);
 
     myArray->display();
 
     cout << "The element is found at index " << myArray->binarySearch(30) << endl;
+
+    myArray->rightRotate();
+    myArray->display();
 
     return 0;
 }
