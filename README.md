@@ -41,9 +41,9 @@ One of the important things is that logical data structures actually use the phy
 
 Next, I will present each data structure separately and what are their functions and benefits.
 
-## Arrays
-
 <a name="arrays_id"></a>
+
+## Arrays
 
 An array is a data structure that is provided almost by every programming language.
 
