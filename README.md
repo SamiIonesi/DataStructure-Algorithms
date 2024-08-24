@@ -41,9 +41,9 @@ One of the important things is that logical data structures actually use the phy
 
 Next, I will present each data structure separately and what are their functions and benefits.
 
-<a name="arrays_id" />
+<a name="arrays_id">
 ## Arrays
-
+</a>
 An array is a data structure that is provided almost by every programming language.
 
 Arrays can be represented in two different form in C++:
