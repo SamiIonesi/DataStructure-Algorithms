@@ -24,7 +24,7 @@ There are two different types of data structures:
 
 Def. : It refers to how data is actually stored in the computer's physical memory. This includes details about memory allocation, how data is organized in memory, the hardware architecture used, and specific performance optimizations.
   
-  - Arrays
+  - [Arrays](#arrays_id)
   - Linked Lists
   
 **2. Logical data structures**
@@ -41,6 +41,7 @@ One of the important things is that logical data structures actually use the phy
 
 Next, I will present each data structure separately and what are their functions and benefits.
 
+<a name="arrays_id" />
 ## Arrays
 
 An array is a data structure that is provided almost by every programming language.
