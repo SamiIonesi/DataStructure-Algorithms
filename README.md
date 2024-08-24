@@ -45,7 +45,7 @@ Next, I will present each data structure separately and what are their functions
 
 ## Arrays
 
-An array is a data structure that is provided almost by every programming language.
+An array is a build-in data structure that is provided almost by every programming language.
 
 Arrays can be represented in two different form in C++:
 - **Static Arrays**: Arrays with a fixed size, determined at compile time.
