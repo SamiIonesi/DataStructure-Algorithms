@@ -70,7 +70,6 @@ Arrays can be represented in two different form in C++:
 ```
 
 If we look at an array as an Abstract Data Type, then we have to mention that the representation of an array has the following requirements:
------
 
 1. **Contiguity of Memory**: The elements must be stored in contiguous memory locations.
 2. **Fixed Size**: The size of the array must be determined when the array is created.
