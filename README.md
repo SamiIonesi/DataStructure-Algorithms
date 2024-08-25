@@ -1,4 +1,4 @@
-# DataStructure-Algorithms
+# DataStructure & Algorithms
 This repository describe the concepts of DSA.
 
 ## Story
@@ -25,7 +25,7 @@ There are two different types of data structures:
 Def. : It refers to how data is actually stored in the computer's physical memory. This includes details about memory allocation, how data is organized in memory, the hardware architecture used, and specific performance optimizations.
   
   - [Arrays](#arrays_id)
-  - Linked Lists
+  - [Linked Lists](#linked_lists_id)
   
 **2. Logical data structures**
 
