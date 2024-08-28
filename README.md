@@ -1,4 +1,4 @@
-# DataStructure-Algorithms
+# DataStructure & Algorithms
 This repository describe the concepts of DSA.
 
 ## Story
@@ -24,8 +24,8 @@ There are two different types of data structures:
 
 Def. : It refers to how data is actually stored in the computer's physical memory. This includes details about memory allocation, how data is organized in memory, the hardware architecture used, and specific performance optimizations.
   
-  - Arrays
-  - Linked Lists
+  - [Arrays](#arrays_id)
+  - [Linked Lists](#linked_lists_id)
   
 **2. Logical data structures**
 
@@ -41,9 +41,11 @@ One of the important things is that logical data structures actually use the phy
 
 Next, I will present each data structure separately and what are their functions and benefits.
 
+<a name="arrays_id"></a>
+
 ## Arrays
 
-An array is a data structure that is provided almost by every programming language.
+An array is a build-in data structure that is provided almost by every programming language.
 
 Arrays can be represented in two different form in C++:
 - **Static Arrays**: Arrays with a fixed size, determined at compile time.
@@ -68,7 +70,6 @@ Arrays can be represented in two different form in C++:
 ```
 
 If we look at an array as an Abstract Data Type, then we have to mention that the representation of an array has the following requirements:
-
 -----
 
 1. **Contiguity of Memory**: The elements must be stored in contiguous memory locations.
@@ -583,7 +584,7 @@ void findDuplicatesInAUnsortedArray()
 }
 ```
 
-19. **Find pairs of sum in a sortded array**
+20. **Find pairs of sum in a sortded array**
 
     This function will find pairs of numbers in a sorted array that sum to k and will display those pairs.
 
