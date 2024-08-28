@@ -684,3 +684,54 @@ int binarySearch(int key)
     return -1;
 }
 ```
+
+## Strings
+
+In computer science, a **string** is a sequence of characters used to represent text. Characters can include letters, numbers, symbols, and even whitespace (such as spaces or tabs). Strings are a fundamental data type in most programming languages and are typically used for storing and manipulating text-based data.
+
+In C++ there are two ways of declaring strings:
+
+1. With arrays
+
+    The code below describes different ways of declaring and initializing a string using arrays.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char string1[10] = {'H', 'e', 'l', 'l', 'o', '\0'}; //declare and initializing an array of characters with the size 10
+    char string2[] = {'H', 'e', 'l', 'l', 'o', '\0'}; //declare and initializing an array of characters without mentioning the size
+    char string3[] = {65, 66, 67, 68 , 69}; //declare and initializing an array of characters using ASCII code
+    char string4[] = "Hello"; //declare and initializing an array of characters using double quotes
+    char* string5 = new char[10]; //declare a constant pointer to the first character of a string
+    const char* string6 = "Hello";  
+    return 0;
+}
+```
+
+2. With string library
+
+    The code below describe the way of declaration and initalization of a string using string library.
+
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string string1; //declare an object(string1) of class string
+    string1 = "Hello"; //initialize this string object with the string of characters "Hello"
+    return 0;
+}
+```
+
+###Important notes on strings
+
+- A string is essentially an array or list of characters arranged in a specific order
+- In C++ the string must be terminated with the null character, otherwise that array is just an array of characters if you use the __array method__ of representing the string, but if you use the __string library method__ the compiler will take care of the null character itself.
+- Usually each character of a string uses the ASCII code for English language, and those are represented in the memory of the computer by one byte.
