@@ -68,6 +68,7 @@ Arrays can be represented in two different form in C++:
 ```
 
 If we look at an array as an Abstract Data Type, then we have to mention that the representation of an array has the following requirements:
+
 -----
 
 1. **Contiguity of Memory**: The elements must be stored in contiguous memory locations.
@@ -457,7 +458,169 @@ void rightRotate()
 }
 ```
 
-There are two methods for searching in an array:
+16. **Check if an array is sorted**
+
+    This function checks if an array is sorted and returns _true_ if it is; otherwise, it returns _false_.
+
+    It has a time complexity of:
+    - **Ω(1)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+bool isSorted()
+    {
+        if(length >= 0 && length < size)
+        {
+            for(int i = 0; i < length - 1; i++)
+            {
+                if(arr[i] > arr[i + 1])
+                    return false;
+            }
+            return true;
+        }
+        return false;
+    }
+```
+
+17. **Merge**
+
+    This function will merge two sorted arrays into a single sorted array.
+
+    Condition: The input arrays must be sorted.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+bool isSorted()
+    {
+        if(length >= 0 && length < size)
+        {
+            for(int i = 0; i < length - 1; i++)
+            {
+                if(arr[i] > arr[i + 1])
+                    return false;
+            }
+            return true;
+        }
+        return false;
+    }
+```
+
+18. **Find duplicates in a sorted array**
+
+    This function will find the duplicates in a sorted array and then print the duplicate number along with the number of times it appears.
+
+    Condition: The input arrays must be sorted.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+void findDuplicatesInASortedArray()
+{
+    if(length >= 0 && length < size)
+    {
+        int count = 0;
+
+        for(int i = 1; i < length; i++)
+        {
+            while(arr[i] == arr[i - 1])
+            {
+                count++;
+                i++;
+            }
+
+            if(count > 0)
+            {
+                cout << "There ar " << count << " duplicates of " << arr[i - count] << endl;
+                count = 0;
+            }
+
+        }
+    }
+}
+```
+
+19. **Find duplicates in a unsorted array**
+
+    This function will find the duplicates in a unsorted array and then print the duplicate number along with the number of times it appears.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+void findDuplicatesInAUnsortedArray()
+{
+    int maxNumber = INT_MIN;
+
+    if(length > 0 && length < size)
+    {
+        for(int i = 0; i < length; i++)
+        {
+            if(arr[i] > maxNumber)
+                maxNumber = arr[i];
+        }
+
+        int* hashTable = new int[maxNumber + 1]{0};
+
+        for(int i = 0; i < length; i++)
+            hashTable[arr[i]]++;
+
+        for(int i = 0; i < maxNumber + 1; i++)
+        {
+            if(hashTable[i] > 1)
+                cout << "There ar " << hashTable[i] << " duplicates of " << i << endl;
+        }
+    }
+}
+```
+
+19. **Find pairs of sum in a sortded array**
+
+    This function will find pairs of numbers in a sorted array that sum to k and will display those pairs.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+  
+```cpp
+void pairWithSumKInASortedArray(int sum)
+{
+    if(length > 0 && length < size)
+    {
+        int maxElement = arr[length - 1];
+        int* hashTable = new int[maxElement]{0};
+
+        for(int i = 0; i < length; i++)
+        {
+            int diff = 0;
+
+            if(arr[i] < sum)
+                diff = sum - arr[i];
+
+            if(hashTable[diff] != 0)
+            {
+                cout << diff << " + " << arr[i] << " = " << sum << endl;
+            }
+
+            hashTable[arr[i]]++;
+        }
+
+    }
+}
+```
+
+####There are two methods for searching in an array:
+
 -----
 
 1. **Linear search**
