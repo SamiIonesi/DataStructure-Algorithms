@@ -221,21 +221,57 @@ public:
         }
     }
 
+    bool anagram(char* secondString)
+    {
+        if(length >= 0 && length < size)
+        {
+            int* hashTable = new int[26]{0};
+
+            for(int i = 0; myString[i] != '\0'; i++)
+            {
+                if((myString[i] >= 65 && myString[i] <= 90))
+                    myString[i] += 32;
+
+                hashTable[myString[i] - 97]++;
+            }
+
+            for(int i = 0; secondString[i] != '\0'; i++)
+            {
+                if((secondString[i] >= 65 && secondString[i] <= 90))
+                    secondString[i] += 32;
+
+                hashTable[secondString[i] - 97]--;
+            }
+
+            for(int i = 0; i < 26; i++)
+            {
+                if(hashTable[i] < 0)
+                    return false;
+            }
+
+            return true;
+
+        }
+        return false;
+    }
+
 };
 
 int main()
 {
     String* theString = new String(20);
-    char otherStr[10] = {'H', 'e', 'l', 'l', 'o', '\0'};
+    char otherStr[10] = {'d', 'e', 'c', 'i', 'm', 'a', 'i', '\0'};
 
-    theString->append('M');
-    theString->append('M');
     theString->append('m');
-    theString->append('m');
-    theString->append('g');
+    theString->append('e');
+    theString->append('d');
+    theString->append('i');
+    theString->append('c');
+    theString->append('a');
+    theString->append('i');
     theString->append('\0');
 
-    theString->duplicates();
+    cout << theString->anagram(otherStr);
 
     return 0;
 }

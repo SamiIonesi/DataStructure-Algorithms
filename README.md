@@ -840,7 +840,7 @@ int lengthOfString()
 
 2. Switch **case**
 
-This function will change the characters of a string for lowercase to uppercase and vice versa.
+    This function will change the characters of a string for lowercase to uppercase and vice versa.
 
     It has a time complexity of:
     - **Ω(n)** for best case
@@ -861,7 +861,7 @@ int lengthOfString()
 
 3. **Vowels**
 
-This function will return the numbers of vowels presents in a string.
+    This function will return the numbers of vowels presents in a string.
 
     It has a time complexity of:
     - **Ω(n)** for best case
@@ -889,7 +889,7 @@ int vowels()
 
 4. **Consonents**
 
-This function will return the numbers of consonents presents in a string.
+    This function will return the numbers of consonents presents in a string.
 
     It has a time complexity of:
     - **Ω(n)** for best case
@@ -917,7 +917,7 @@ int consonents()
 
 5. **Words**
 
-This function will return the numbers of words presents in a string.
+    This function will return the numbers of words presents in a string.
 
     It has a time complexity of:
     - **Ω(n)** for best case
@@ -943,7 +943,7 @@ int words()
 
 6. **Reverse**
 
-This function will reverse a string.
+    This function will reverse a string.
 
     It has a time complexity of:
     - **Ω(n)** for best case
@@ -979,7 +979,7 @@ void reverse()
 
 7. **Compare**
 
-This function will compare two strings to check if they are identical.
+    This function will compare two strings to check if they are identical.
 
     It has a time complexity of:
     - **Ω(1)** for best case
@@ -1005,7 +1005,7 @@ bool compare(char* otherString)
 
 8. **Palindrome**
 
-This function will check if a string is a palidrome.
+    This function will check if a string is a palidrome.
 
     It has a time complexity of:
     - **Ω(n)** for best case
@@ -1037,7 +1037,7 @@ bool palidrome()
 
 8. **Duplicates**
 
-This function will check if there is duplicates in a string.
+    This function will check if there is duplicates in a string.
 
     It has a time complexity of:
     - **Ω(n)** for best case
@@ -1063,5 +1063,50 @@ void duplicates()
                 printf("The element %c has %d duplicates.\n", (i + 65), hashTable[i]);
         }
     }
+}
+```
+
+9. **Anagram**
+
+    This function will check if a given string is an anagram.
+
+    It has a time complexity of:
+    - **Ω(n)** for best case
+    - **θ(n)** for average case
+    - **O(n)** for worst case
+
+```cpp
+bool anagram(char* secondString)
+{
+    if(length >= 0 && length < size)
+    {
+        int* hashTable = new int[26]{0};
+
+        for(int i = 0; myString[i] != '\0'; i++)
+        {
+            if((myString[i] >= 65 && myString[i] <= 90))
+                myString[i] += 32;
+
+            hashTable[myString[i] - 97]++;
+        }
+
+        for(int i = 0; secondString[i] != '\0'; i++)
+        {
+            if((secondString[i] >= 65 && secondString[i] <= 90))
+                secondString[i] += 32;
+
+            hashTable[secondString[i] - 97]--;
+        }
+
+        for(int i = 0; i < 26; i++)
+        {
+            if(hashTable[i] < 0)
+                return false;
+        }
+
+        return true;
+
+    }
+    return false;
 }
 ```
