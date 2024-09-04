@@ -1127,14 +1127,10 @@ There are differite form of these matrices an they are:
 
     Example of a diagonal matrix of dimension 5x5.
 
-    *3* 0 0 0 0
-
-    0 *7* 0 0 0
-
-    0 0 *4* 0 0
-
-    0 0 0 *9* 0
-    
+    *3* 0 0 0 0 <br>
+    0 *7* 0 0 0 <br>
+    0 0 *4* 0 0 <br>
+    0 0 0 *9* 0 <br>
     0 0 0 0 *6*
 
     Because of this condition, the diagonal matrix can be represented in programming with the help of a 1D array.
@@ -1223,14 +1219,10 @@ int main()
 
     Example of a lower triangular matrix of dimension 5x5.
 
-    *3* 0 0 0 0
-
-    *5* *7* 0 0 0
-
-    *2* *3* *4* 0 0
-
-    *8* *2* *6* *9* 0
-
+    *3* 0 0 0 0 <br>
+    *5* *7* 0 0 0 <br>
+    *2* *3* *4* 0 0 <br>
+    *8* *2* *6* *9* 0 <br>
     *5* *6* *1* *6* *4*
     
     The following class will describe the lower triangular matrix and necessary operations performed on it:
@@ -1300,14 +1292,10 @@ public:
 
     Example of a upper triangular matrix of dimension 5x5.
 
-    *5* *6* *1* *6* *4*
-
-    0 *8* *2* *6* *9* 
-
-    0 0 *4* *5* *7*
-
-    0 0 0 *2* *3*
-
+    *5* *6* *1* *6* *4* <br>
+    0 *8* *2* *6* *9* <br>
+    0 0 *4* *5* *7* <br> 
+    0 0 0 *2* *3* <br>
     0 0 0 0 *3*
     
     The following class will describe the upper triangular matrix and necessary operations performed on it:
@@ -1381,14 +1369,10 @@ public:
 
     Example of a symmetric matrix of dimension 5x5.
 
-    *2* *2* *2* *2* *2*
-
-    *2* *3* *3* *3* *3* 
-
-    *2* *3* *4* *4* *4*
-
-    *2* *3* *4* *5* *5*
-
+    *2* *2* *2* *2* *2* <br>
+    *2* *3* *3* *3* *3* <br>
+    *2* *3* *4* *4* *4* <br>
+    *2* *3* *4* *5* *5* <br>
     *2* *3* *4* *5* *6*
     
     The symmetric matrix class is similar to the upper triangular matrix class; the difference lies in the display function:
@@ -1424,11 +1408,11 @@ void display()
 
     Example of a diagonal matrix of dimension 5x5.
 
-    *3* *4* 0 0 0
-    *2* *7* *3* 0 0
-    0 *6* *4* *6* 0
-    0 0 *8* *9* *1*
-    0 0 0 *7* *6*
+    *3* *4* 0 0 0 <br>
+    *2* *7* *3* 0 0 <br>
+    0 *6* *4* *6* 0 <br>
+    0 0 *8* *9* *1* <br>
+    0 0 0 *7* *6* <br>
     
     The following class will describe the tridiagonal matrix and necessary operations performed on it:
 
@@ -1531,14 +1515,10 @@ public:
 
     Example of a toeplitz matrix of dimension 5x5:
 
-    *5* *6* *7* *8* *9*
-
-    *4* *5* *6* *7* *8* 
-
-    *3* *4* *5* *6* *7*
-
-    *2* *3* *4* *5* *6*
-
+    *5* *6* *7* *8* *9* <br>
+    *4* *5* *6* *7* *8* <br>
+    *3* *4* *5* *6* *7* <br> 
+    *2* *3* *4* *5* *6* <br>
     *1* *3* *3* *4* *5*
     
     The following class will describe the toeplitz matrix and necessary operations performed on it:
