@@ -1402,8 +1402,7 @@ void display()
     - i - j = 1
     - i - j = -1
     
-    Matrix[i, j] != 0  if( |i - j| <= 1)
-
+    Matrix[i, j] != 0  if( |i - j| <= 1)  
     Matrix[i, j] = 0  if( |i - j| > 1)
 
     Example of a diagonal matrix of dimension 5x5.
