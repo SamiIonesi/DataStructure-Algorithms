@@ -107,10 +107,10 @@ int main()
 
     int x;
 
-    // cout << "What should be the x o the polynomial?" << endl;
-    // cin >> x;
+    cout << "What should be the x o the polynomial?" << endl;
+    cin >> x;
 
-    // cout << "The result is: " << myPolynomial->evaluatePolynomial(x);
+    cout << "The result is: " << myPolynomial->evaluatePolynomial(x);
 
     int maxExponentSecondArray = 3;
 
