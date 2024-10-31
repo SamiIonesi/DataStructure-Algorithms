@@ -20,6 +20,8 @@ To solve a certain problem, there are various types of data structures from whic
 
 ### Types of data structures
 
+> **Note**: If you want to access the documentation for a specific data structure or algorithm, simply click on the blue link in the next lists , which will direct you to a repository containing all the relevant details.
+
 There are two different types of data structures:
 
 #### **1. Physical data structures**
@@ -48,5 +50,3 @@ There are also various structures encountered in programming that are not typica
   - [Strings](https://github.com/SamiIonesi/Strings)
   - [Matrices](https://github.com/SamiIonesi/Matrices)
   - Objects
-
-> **Note**: If you want to access the documentation for a specific data structure or algorithm, simply click on the blue links in the list above, which will direct you to a repository containing all the relevant details.
